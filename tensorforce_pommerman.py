@@ -70,21 +70,8 @@ class WrappedEnv(OpenAIGym):
 
         target_obs = obs[self.gym.training_agent]
 
-        # print(target_obs['board'])
-        # 0  床
-        # 1  壁 破壊不可
-        # 2  壁 破壊可
-        # 3  爆弾
-        # 4  爆風?
-        # 5  ない?
-        # 6  ボム
-        # 7  火力
-        # 8  キック
-        # 9  ない?
-        # 10 1P左上
-        # 11 2P左下
-        # 12 3P右下
-        # 13 4P右上 自エージェント
+        # obsの詳細
+        # https://github.com/MultiAgentLearning/playground/tree/master/pommerman
 
         if not terminal:
             # 爆弾獲得
@@ -199,11 +186,8 @@ def main(args):
 
     agents = []
     for agent_id in range(3):
-        # RandomAgent 動かなければ勝てるので動かなくなる
         # agents.append(RandomAgent(config["agent"](agent_id, config["game_type"])))
-        # StoppingAgent 壁壊したりするが自爆も多く爆弾置かなくなる
         # agents.append(StoppingAgent(config["agent"](agent_id, config["game_type"])))
-        # SimpleAgent 強い、勝てないので学習が全然進まない
         agents.append(SimpleAgent(config["agent"](agent_id, config["game_type"])))
 
     agent_id += 1
