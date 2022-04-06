@@ -2,7 +2,7 @@ setuptools==41.2.0
 tensorflow==1.14.0
 tensorforce==0.4.3
 numpy==1.16.4
-notebook==6.0.1
+notebook==6.4.10
 gym[atari]==0.10.11
 keras==2.3.0
 keras-rl==0.4.2
