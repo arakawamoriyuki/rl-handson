@@ -1,5 +1,5 @@
 setuptools==41.2.0
-tensorflow==1.14.0
+tensorflow==2.6.4
 tensorforce==0.4.3
 numpy==1.16.4
 notebook==6.0.1
