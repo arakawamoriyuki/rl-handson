@@ -1,7 +1,7 @@
 setuptools==41.2.0
 tensorflow==1.14.0
 tensorforce==0.4.3
-numpy==1.16.4
+numpy==1.22.0
 notebook==6.0.1
 gym[atari]==0.10.11
 keras==2.3.0
